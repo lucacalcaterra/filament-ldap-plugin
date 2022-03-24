@@ -2,12 +2,12 @@
 
 namespace Lucacalcaterra\FilamentLdapPlugin\Resources;
 
-use Filament\Forms;
 use App\Models\User;
-use Filament\Tables;
+use Filament\Forms;
 use Filament\Resources\Form;
-use Filament\Resources\Table;
 use Filament\Resources\Resource;
+use Filament\Resources\Table;
+use Filament\Tables;
 use Lucacalcaterra\FilamentLdapPlugin\Resources\UserResource\Pages;
 
 use Lucacalcaterra\FilamentLdapPlugin\Resources\UserResource\RelationManagers;
@@ -21,7 +21,6 @@ class UserResource extends Resource
     protected static ?string $navigationGroup = 'Autorizzazioni';
 
     protected static ?string $pluralLabel = 'Utenti';
-
 
     public static function form(Form $form): Form
     {
