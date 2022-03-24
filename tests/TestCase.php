@@ -3,8 +3,8 @@
 namespace Lucacalcaterra\FilamentLdapPlugin\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Orchestra\Testbench\TestCase as Orchestra;
 use Lucacalcaterra\FilamentLdapPlugin\FilamentLdapPluginServiceProvider;
+use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {

@@ -2,9 +2,9 @@
 
 namespace Lucacalcaterra\FilamentLdapPlugin;
 
+use Lucacalcaterra\FilamentLdapPlugin\Commands\FilamentLdapPluginCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Lucacalcaterra\FilamentLdapPlugin\Commands\FilamentLdapPluginCommand;
 
 class FilamentLdapPluginServiceProvider extends PackageServiceProvider
 {
