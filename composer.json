@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "lucacalcaterra/filament-ldap-plugin",
+    "description": "This is my package filament-ldap-plugin",
     "keywords": [
-        ":vendor_name",
+        "lucacalcaterra",
         "laravel",
-        ":package_slug"
+        "filament-ldap-plugin"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/lucacalcaterra/filament-ldap-plugin",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Luca Calcaterra",
+            "email": "calcaterra.luca@gmail.com",
             "role": "Developer"
         }
     ],
@@ -34,13 +34,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Lucacalcaterra\\FilamentLdapPlugin\\": "src",
+            "Lucacalcaterra\\FilamentLdapPlugin\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Lucacalcaterra\\FilamentLdapPlugin\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -54,10 +54,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Lucacalcaterra\\FilamentLdapPlugin\\FilamentLdapPluginServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "FilamentLdapPlugin": "Lucacalcaterra\\FilamentLdapPlugin\\Facades\\FilamentLdapPlugin"
             }
         }
     },
