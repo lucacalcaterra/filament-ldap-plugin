@@ -8,17 +8,16 @@
     ],
     "homepage": "https://github.com/lucacalcaterra/filament-ldap-plugin",
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Luca Calcaterra",
-            "email": "calcaterra.luca@gmail.com",
-            "role": "Developer"
-        }
-    ],
+    "authors": [{
+        "name": "Luca Calcaterra",
+        "email": "calcaterra.luca@gmail.com",
+        "role": "Developer"
+    }],
     "require": {
         "php": "^8.0",
         "spatie/laravel-package-tools": "^1.9.2",
-        "illuminate/contracts": "^9.0"
+        "illuminate/contracts": "^9.0",
+        "filament/filament": "^2.0"
     },
     "require-dev": {
         "nunomaduro/collision": "^6.0",
@@ -49,7 +48,11 @@
         "test-coverage": "vendor/bin/pest --coverage"
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
     },
     "extra": {
         "laravel": {
