@@ -34,7 +34,6 @@
     "autoload": {
         "psr-4": {
             "Lucacalcaterra\\FilamentLdapPlugin\\": "src",
-            "Lucacalcaterra\\FilamentLdapPlugin\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
@@ -58,10 +57,7 @@
         "laravel": {
             "providers": [
                 "Lucacalcaterra\\FilamentLdapPlugin\\FilamentLdapPluginServiceProvider"
-            ],
-            "aliases": {
-                "FilamentLdapPlugin": "Lucacalcaterra\\FilamentLdapPlugin\\Facades\\FilamentLdapPlugin"
-            }
+            ]
         }
     },
     "minimum-stability": "dev",

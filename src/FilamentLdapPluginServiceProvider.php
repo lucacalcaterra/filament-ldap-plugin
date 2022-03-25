@@ -6,11 +6,16 @@ use Filament\PluginServiceProvider;
 use Spatie\LaravelPackageTools\Package;
 use Lucacalcaterra\FilamentLdapPlugin\Resources\UserResource;
 use Lucacalcaterra\FilamentLdapPlugin\Commands\FilamentLdapPluginCommand;
+use Lucacalcaterra\FilamentLdapPlugin\Resources\UserResource\Pages\ListUsers;
 
 class FilamentLdapPluginServiceProvider extends PluginServiceProvider
 {
     protected array $resources = [
         UserResource::class,
+    ];
+
+    protected array $pages = [
+        ListUsers::class,
     ];
 
     public function configurePackage(Package $package): void
@@ -21,10 +26,11 @@ class FilamentLdapPluginServiceProvider extends PluginServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('filament-ldap-plugin');
-        // ->hasConfigFile()
-        // ->hasViews()
-        // ->hasMigration('create_filament-ldap-plugin_table')
-        // ->hasCommand(FilamentLdapPluginCommand::class);
+            ->name('filament-ldap-plugin')
+            ->hasConfigFile()
+            ->hasViews()
+            //->hasMigrations(['create_filament_ldap_plugin_table', 'add_columns_to_users'])
+            ->hasMigration('2022_03_25_132727_add_columns_users')
+            ->hasCommand(FilamentLdapPluginCommand::class);
     }
 }

@@ -8,8 +8,8 @@ use Filament\Tables;
 use Filament\Resources\Form;
 use Filament\Resources\Table;
 use Filament\Resources\Resource;
-use Lucacalcaterra\FilamentLdapPlugin\Resources\UserResource\Pages;
 
+use Lucacalcaterra\FilamentLdapPlugin\Resources\UserResource\Pages;
 use Lucacalcaterra\FilamentLdapPlugin\Resources\UserResource\RelationManagers;
 
 class UserResource extends Resource
