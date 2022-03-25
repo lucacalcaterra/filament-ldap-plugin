@@ -2,15 +2,14 @@
 
 namespace Lucacalcaterra\FilamentLdapPlugin\Resources\UserResource\RelationManagers;
 
-
-use Filament\Forms;
 use App\Models\Team;
-use Livewire\Component;
+use Filament\Forms;
 use Filament\Resources\Form;
-use Filament\Resources\Table;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Database\Eloquent\Model;
 use Filament\Resources\RelationManagers\BelongsToManyRelationManager;
+use Filament\Resources\Table;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\DB;
+use Livewire\Component;
 
 class RolesRelationManager extends BelongsToManyRelationManager
 {
@@ -25,7 +24,6 @@ class RolesRelationManager extends BelongsToManyRelationManager
     public ?Model $record = null;
 
     protected $listeners = ['userUpdated'];
-
 
     // disabilita la creazione e la modifica dei ruoli all'interno dal form utente
     protected function canCreate(): bool
@@ -48,11 +46,8 @@ class RolesRelationManager extends BelongsToManyRelationManager
         return false;
     }
 
-
-
     public static function table(Table $table): Table
     {
-
         return $table
             ->columns(
 
@@ -68,10 +63,8 @@ class RolesRelationManager extends BelongsToManyRelationManager
             ]);
     }
 
-
     public static function attachForm(Form $form): Form
     {
-
         return $form
             ->schema([
                 // static::getAttachFormRecordSelect(),
