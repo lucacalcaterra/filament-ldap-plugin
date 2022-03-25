@@ -2,8 +2,8 @@
 
 namespace Lucacalcaterra\FilamentLdapPlugin\Resources\UserResource\Pages;
 
-use Lucacalcaterra\FilamentLdapPlugin\Resources\UserResource;
 use Filament\Resources\Pages\ListRecords;
+use Lucacalcaterra\FilamentLdapPlugin\Resources\UserResource;
 
 class ListUsers extends ListRecords
 {

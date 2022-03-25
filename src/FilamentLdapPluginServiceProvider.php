@@ -3,9 +3,9 @@
 namespace Lucacalcaterra\FilamentLdapPlugin;
 
 use Filament\PluginServiceProvider;
-use Spatie\LaravelPackageTools\Package;
 use Lucacalcaterra\FilamentLdapPlugin\Commands\FilamentLdapPluginCommand;
 use Lucacalcaterra\FilamentLdapPlugin\Resources\UserResource\Pages\ListUsers;
+use Spatie\LaravelPackageTools\Package;
 
 class FilamentLdapPluginServiceProvider extends PluginServiceProvider
 {
