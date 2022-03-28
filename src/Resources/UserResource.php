@@ -2,11 +2,13 @@
 
 namespace Lucacalcaterra\FilamentLdapPlugin\Resources;
 
-use App\Models\User;
 use Filament\Forms;
+use Filament\Tables;
+use App\Models\User;
 use Filament\Resources\Form;
-use Filament\Resources\Resource;
+use Filament\Resources\Table;
 
+use Filament\Resources\Resource;
 use Lucacalcaterra\FilamentLdapPlugin\Resources\UserResource\Pages;
 use Lucacalcaterra\FilamentLdapPlugin\Resources\UserResource\RelationManagers;
 

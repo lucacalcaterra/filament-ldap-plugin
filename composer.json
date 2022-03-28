@@ -33,7 +33,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Lucacalcaterra\\FilamentLdapPlugin\\": "src",
+            "Lucacalcaterra\\FilamentLdapPlugin\\": "src"
         }
     },
     "autoload-dev": {
